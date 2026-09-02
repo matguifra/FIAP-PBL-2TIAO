@@ -1,0 +1,4 @@
+wfdb
+matplotlib
+pandas
+numpy
