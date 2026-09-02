@@ -12,8 +12,8 @@
 |---|:---:|---|---|
 | **João Rafael Gonçalves Ramos** | 567908 | Parte 1 — Dados Numéricos (IoT) | [`cardioia-dados-numericos`](https://github.com/joaorafa-ramos/cardioia-dados-numericos/tree/main) |
 | **Leticia Guerra Soares** | 567501 | Parte 2 — Dados Textuais (NLP) | [`cardioia-dados-textuais`](https://github.com/leticiaguerrasoares/cardioia-dados-textuais/tree/main) |
-| **Matheus Guimarães França** | 567144 | Consolidação, Governança & Integração | *(Este repositório consolidado de entrega)* |
 | **Rivando Bezerra Cavalcanti Neto** | 568235 | Parte 3 — Dados Visuais (VC) | [`CardioIA`](https://github.com/RivandoNeto/CardioIA/tree/main) |
+| **Matheus Guimarães França** | 567144 | Consolidação, Governança & Integração | *(Este repositório consolidado de entrega)* |
 
 ---
 
