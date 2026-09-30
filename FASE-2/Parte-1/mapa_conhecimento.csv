@@ -1,0 +1,80 @@
+Sintoma 1,Sintoma 2,Doença Associada
+dor no peito,aperto no tórax,Infarto agudo do miocárdio
+aperto no peito,pressão no peito,Infarto agudo do miocárdio
+irradia para o braço esquerdo,dor no braço esquerdo,Infarto agudo do miocárdio
+suor frio,sudorese,Infarto agudo do miocárdio
+enjoo,náusea,Infarto agudo do miocárdio
+dor na mandíbula,dor no queixo,Infarto agudo do miocárdio
+dor que não passa,não melhora com repouso,Infarto agudo do miocárdio
+sensação de morte,achei que ia morrer,Infarto agudo do miocárdio
+dor no peito,aperto no peito,Angina
+piora quando faço esforço,piora com esforço,Angina
+subir escadas,subir ladeira,Angina
+alivia quando paro,melhora com repouso,Angina
+peso no peito,desconforto no peito,Angina
+falta de ar,dificuldade para respirar,Angina
+piora no frio,piora com estresse,Angina
+cansaço constante,fadiga,Insuficiência cardíaca
+falta de ar,dificuldade para respirar,Insuficiência cardíaca
+tornozelos inchados,inchaço nos tornozelos,Insuficiência cardíaca
+pernas inchadas,pés inchados,Insuficiência cardíaca
+acordo com falta de ar,acordo sufocado,Insuficiência cardíaca
+falta de ar ao deitar,não consigo deitar,Insuficiência cardíaca
+tosse seca à noite,tosse noturna,Insuficiência cardíaca
+ganho de peso rápido,engordei rápido,Insuficiência cardíaca
+canso fácil,cansaço aos pequenos esforços,Insuficiência cardíaca
+palpitação,palpitações,Arritmia cardíaca
+coração disparado,coração acelerado,Arritmia cardíaca
+descompassado,batimentos irregulares,Arritmia cardíaca
+coração falhando,coração pulando,Arritmia cardíaca
+tontura,tonteira,Arritmia cardíaca
+desmaio,desmaiei,Arritmia cardíaca
+pressão alta,pressão subiu,Hipertensão arterial
+dor na nuca,dor de cabeça na nuca,Hipertensão arterial
+dor de cabeça,cefaleia,Hipertensão arterial
+visão embaçada,vista turva,Hipertensão arterial
+zumbido no ouvido,zumbido,Hipertensão arterial
+sangramento no nariz,sangramento nasal,Hipertensão arterial
+dor no peito,pontada no peito,Pericardite
+piora quando deito,piora ao deitar,Pericardite
+quando respiro fundo,ao respirar fundo,Pericardite
+inclino o corpo para frente,inclinar para frente,Pericardite
+febre,febril,Pericardite
+tive gripe,resfriado recente,Pericardite
+perna inchada,inchaço na perna,Trombose venosa profunda
+dor na panturrilha,dor na batata da perna,Trombose venosa profunda
+pele vermelha,vermelhidão na perna,Trombose venosa profunda
+perna quente,pele quente,Trombose venosa profunda
+viagem de avião,viagem longa,Trombose venosa profunda
+muito tempo sentado,imobilizado,Trombose venosa profunda
+falta de ar repentina,falta de ar súbita,Embolia pulmonar
+dor no peito ao respirar,dor ao respirar,Embolia pulmonar
+tossindo sangue,tosse com sangue,Embolia pulmonar
+coração acelerado,taquicardia,Embolia pulmonar
+operei,cirurgia recente,Embolia pulmonar
+passo o dia deitado,acamado,Embolia pulmonar
+boca torta,rosto torto,Acidente vascular cerebral (AVC)
+fala enrolada,dificuldade para falar,Acidente vascular cerebral (AVC)
+fraqueza no braço,fraqueza em um lado do corpo,Acidente vascular cerebral (AVC)
+dormência no rosto,formigamento em um lado do corpo,Acidente vascular cerebral (AVC)
+perda de visão,visão dupla,Acidente vascular cerebral (AVC)
+dor de cabeça súbita,pior dor de cabeça,Acidente vascular cerebral (AVC)
+perda de equilíbrio,dificuldade para andar,Acidente vascular cerebral (AVC)
+febre,febre persistente,Endocardite infecciosa
+febre que vai e volta,febre intermitente,Endocardite infecciosa
+calafrios,calafrio,Endocardite infecciosa
+suor à noite,suor noturno,Endocardite infecciosa
+manchas vermelhas nos dedos,manchas nas palmas das mãos,Endocardite infecciosa
+tratamento de canal,tratamento dentário,Endocardite infecciosa
+perda de peso,emagreci,Endocardite infecciosa
+fraqueza,cansaço,Endocardite infecciosa
+dor na perna ao caminhar,dor nas pernas ao andar,Doença arterial periférica
+melhora quando paro de andar,passa quando paro de caminhar,Doença arterial periférica
+pés frios,pé gelado,Doença arterial periférica
+ferida no pé,ferida que não cicatriza,Doença arterial periférica
+cãibra na panturrilha,câimbra na panturrilha,Doença arterial periférica
+pés arroxeados,perna pálida,Doença arterial periférica
+tontura quando levanto,tontura ao levantar,Hipotensão ortostática
+vista escurece,visão escurece,Hipotensão ortostática
+quase desmaiei,sensação de desmaio,Hipotensão ortostática
+fraqueza ao ficar em pé,tontura ao ficar em pé,Hipotensão ortostática
