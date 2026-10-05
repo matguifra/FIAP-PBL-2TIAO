@@ -9,10 +9,12 @@
 # CardioIA — Fase 2, Parte 1: Frases de Sintomas e Extração de Informações
 
 ## 👨‍🎓 Integrantes:
-- <a href="https://github.com/joaorafa-ramos">João Rafael Gonçalves Ramos</a> RM567908
-- <a href="https://github.com/leticiaguerrasoares">Leticia Angelim Guerra</a> RM567501
-- <a href="https://github.com/matguifra">Matheus Guimarães França</a> RM567144
-- <a href="https://github.com/RivandoNeto">Rivando Bezerra Cavalcanti Neto</a> RM568235
+| Nome | RM |
+|---|:---:|
+| <a href="https://github.com/joaorafa-ramos">João Rafael Gonçalves Ramos</a> | RM567908 |
+| <a href="https://github.com/leticiaguerrasoares">Letícia Angelim Guerra</a> | RM567501 |
+| <a href="https://github.com/matguifra">Matheus Guimarães França</a> | RM567144 |
+| <a href="https://github.com/RivandoNeto">Rivando Bezerra Cavalcanti Neto</a> | RM568235 |
 
 ## 👩‍🏫 Professores:
 ### Tutor(a)
