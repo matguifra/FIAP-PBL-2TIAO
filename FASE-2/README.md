@@ -25,6 +25,8 @@
 
 ## 📜 Descrição
 
+**Apresentação: https://youtu.be/Rn0Sv43i56U**
+
 O **CardioIA — Fase 2** expande o ecossistema cardiológico inteligente desenvolvido na Fase 1, implementando soluções de **Processamento de Linguagem Natural (NLP)** e **Aprendizado de Máquina** para automatizar a triagem clínica e apoiar a formulação de hipóteses diagnósticas a partir de relatos livres de sintomas.
 
 O projeto é estruturado em duas etapas complementares e integradas:
