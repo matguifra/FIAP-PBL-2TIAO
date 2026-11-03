@@ -1,0 +1,331 @@
+[
+  {
+    "id": "fluxo1",
+    "type": "tab",
+    "label": "CardioIA - Parte 2 (Dashboard)",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "broker1",
+    "type": "mqtt-broker",
+    "name": "HiveMQ publico",
+    "broker": "broker.hivemq.com",
+    "port": "1883",
+    "clientid": "",
+    "autoConnect": true,
+    "usetls": false,
+    "protocolVersion": "4",
+    "keepalive": "60",
+    "cleansession": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthPayload": "",
+    "closeTopic": "",
+    "closeQos": "0",
+    "closePayload": "",
+    "willTopic": "",
+    "willQos": "0",
+    "willPayload": ""
+  },
+  {
+    "id": "uitab1",
+    "type": "ui_tab",
+    "name": "CardioIA",
+    "icon": "fa-heartbeat",
+    "order": 1,
+    "disabled": false,
+    "hidden": false
+  },
+  {
+    "id": "grpVitais",
+    "type": "ui_group",
+    "name": "Sinais Vitais",
+    "tab": "uitab1",
+    "order": 1,
+    "disp": true,
+    "width": "12",
+    "collapse": false
+  },
+  {
+    "id": "grpAlerta",
+    "type": "ui_group",
+    "name": "Status e Alerta",
+    "tab": "uitab1",
+    "order": 2,
+    "disp": true,
+    "width": "12",
+    "collapse": false
+  },
+  {
+    "id": "mqttin1",
+    "type": "mqtt in",
+    "z": "fluxo1",
+    "name": "telemetria",
+    "topic": "cardioia/leticia567501/telemetria",
+    "qos": "0",
+    "datatype": "json",
+    "broker": "broker1",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 130,
+    "y": 200,
+    "wires": [
+      [
+        "cBpm",
+        "cTemp",
+        "gTemp",
+        "gBpm",
+        "tplLed",
+        "tStatus"
+      ]
+    ]
+  },
+  {
+    "id": "cBpm",
+    "type": "change",
+    "z": "fluxo1",
+    "name": "bpm",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "payload.bpm",
+        "tot": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 340,
+    "y": 120,
+    "wires": [
+      [
+        "chartBpm"
+      ]
+    ]
+  },
+  {
+    "id": "cTemp",
+    "type": "change",
+    "z": "fluxo1",
+    "name": "temp",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "payload.temp",
+        "tot": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 340,
+    "y": 180,
+    "wires": [
+      [
+        "gaugeTemp"
+      ]
+    ]
+  },
+  {
+    "id": "chartBpm",
+    "type": "ui_chart",
+    "z": "fluxo1",
+    "name": "BPM (tempo real)",
+    "group": "grpVitais",
+    "order": 1,
+    "width": "12",
+    "height": "5",
+    "label": "Batimentos (BPM)",
+    "chartType": "line",
+    "legend": "false",
+    "xformat": "HH:mm:ss",
+    "interpolate": "linear",
+    "nodata": "aguardando dados...",
+    "dot": false,
+    "ymin": "0",
+    "ymax": "200",
+    "removeOlder": "5",
+    "removeOlderPoints": "",
+    "removeOlderUnit": "60",
+    "cutout": 0,
+    "useOneColor": false,
+    "useUTC": false,
+    "colors": [
+      "#1f77b4",
+      "#aec7e8",
+      "#ff7f0e",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd"
+    ],
+    "outputs": 1,
+    "useDifferentColor": false,
+    "className": "",
+    "x": 560,
+    "y": 120,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "gaugeTemp",
+    "type": "ui_gauge",
+    "z": "fluxo1",
+    "name": "Temperatura",
+    "group": "grpVitais",
+    "order": 2,
+    "width": "6",
+    "height": "4",
+    "gtype": "gauge",
+    "title": "Temperatura",
+    "label": "°C",
+    "format": "{{value}}",
+    "min": "30",
+    "max": "42",
+    "colors": [
+      "#00b500",
+      "#e6e600",
+      "#ca3838"
+    ],
+    "seg1": "37.5",
+    "seg2": "38",
+    "diff": false,
+    "className": "",
+    "x": 560,
+    "y": 180,
+    "wires": []
+  },
+  {
+    "id": "gBpm",
+    "type": "change",
+    "z": "fluxo1",
+    "name": "bpm->gauge",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "payload.bpm",
+        "tot": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 340,
+    "y": 240,
+    "wires": [
+      [
+        "gaugeBpm"
+      ]
+    ]
+  },
+  {
+    "id": "gaugeBpm",
+    "type": "ui_gauge",
+    "z": "fluxo1",
+    "name": "BPM",
+    "group": "grpVitais",
+    "order": 3,
+    "width": "6",
+    "height": "4",
+    "gtype": "gauge",
+    "title": "Frequencia cardiaca",
+    "label": "bpm",
+    "format": "{{value}}",
+    "min": "0",
+    "max": "200",
+    "colors": [
+      "#00b500",
+      "#e6e600",
+      "#ca3838"
+    ],
+    "seg1": "100",
+    "seg2": "120",
+    "diff": false,
+    "className": "",
+    "x": 560,
+    "y": 240,
+    "wires": []
+  },
+  {
+    "id": "tplLed",
+    "type": "ui_template",
+    "z": "fluxo1",
+    "group": "grpAlerta",
+    "name": "Indicador de alerta",
+    "order": 1,
+    "width": "12",
+    "height": "2",
+    "format": "<div layout=\"row\" layout-align=\"center center\" style=\"width:100%;height:70px;border-radius:12px;color:#fff;font-size:20px;font-weight:700;background-color:{{msg.payload.alerta ? '#ca3838' : '#2e9e5b'}}\"><span>{{msg.payload.alerta ? '⚠ ALERTA' : '✔ Normal'}}<span ng-if=\"msg.payload.status && msg.payload.status!='NORMAL'\"> &nbsp;—&nbsp; {{msg.payload.status}}</span></span></div>",
+    "storeOutMessages": true,
+    "fwdInMessages": true,
+    "resendOnRefresh": true,
+    "templateScope": "local",
+    "className": "",
+    "x": 360,
+    "y": 320,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "tStatus",
+    "type": "change",
+    "z": "fluxo1",
+    "name": "status->texto",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "payload.status",
+        "tot": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 350,
+    "y": 380,
+    "wires": [
+      [
+        "uiStatus"
+      ]
+    ]
+  },
+  {
+    "id": "uiStatus",
+    "type": "ui_text",
+    "z": "fluxo1",
+    "group": "grpAlerta",
+    "order": 2,
+    "width": "6",
+    "height": "1",
+    "name": "Status",
+    "label": "Status atual",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "className": "",
+    "x": 560,
+    "y": 380,
+    "wires": []
+  }
+]
